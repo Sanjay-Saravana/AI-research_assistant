@@ -1,0 +1,13 @@
+name: research_ai
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+    - crewai
+    - langchain-community
+    - "fastapi[standard]"
+    - uvicorn
+    - python-dotenv
