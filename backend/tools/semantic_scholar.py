@@ -1,9 +1,9 @@
-from crewai_tools import BaseTool
+from crewai.tools import BaseTool
 import requests
 
 class SemanticScholarTool(BaseTool):
-    name = "Semantic Scholar Tool"
-    description = "Search research papers using Semantic Scholar"
+    name: str = "Semantic Scholar Tool"
+    description: str = "Search research papers using Semantic Scholar"
 
     def _run(self, query: str) -> str:
         url = f"https://api.semanticscholar.org/graph/v1/paper/search?query={query}&limit=3"
