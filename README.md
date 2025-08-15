@@ -50,7 +50,7 @@ This project builds a **Research AI API** that accepts PDF uploads, uses CrewAI 
 
 ### Prerequisites
 
-- Python ≥ 3.10 and < 3.14 :contentReference[oaicite:2]{index=2}  
+- Python ≥ 3.10 and < 3.14  
 - A valid LLM API key (e.g., OpenAI) configured in `.env`
 
 ### Installation
@@ -64,3 +64,4 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+
