@@ -4,32 +4,16 @@ A research assistant API that automates extraction of insights from PDF document
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Getting Started](#getting-started)  
-- [Usage](#usage)  
-- [Architecture](#architecture)  
-- [Configuration](#configuration)  
-- [Project Structure](#project-structure)  
-- [Examples](#examples)  
-- [Future Enhancements](#future-enhancements)  
-- [License](#license)
-
----
 
 ## Overview
 
-This project builds a **Research AI API** that accepts PDF uploads, uses CrewAI agents to analyze and summarize content, and returns structured insights via FastAPI. The modular design enables tailored research workflows with minimal overhead.
+This project builds a **Research AI API** that searches for research paper and extract content, uses CrewAI agents to analyze and summarize content, and returns structured insights via FastAPI. The modular design enables tailored research workflows with minimal overhead.
 
 ---
 
 ## Features
 
-- **PDF Parsing** – Extract text from uploaded PDF files via `PyPDF2`.
-- **AI Agent Crew** – Use CrewAI to orchestrate specialized agents (e.g., summarizer, topic analyzer, insight extractor).
+- **AI Agent Crew** – Use CrewAI to orchestrate specialized agents (e.g., searcher, summarizer, topic analyzer, insight extractor).
 - **Web API** – Expose endpoints (`/analyze`, `/status`, `/result`) using FastAPI.
 - **Async Workflow** – Leverage asynchronous handling of file uploads, agent orchestration, and response streaming.
 - **Structured Output** – Return results as JSON with clear summaries, topic tags, and extracted insights.
@@ -64,4 +48,5 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+
 
