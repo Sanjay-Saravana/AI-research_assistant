@@ -12,3 +12,4 @@ dependencies:
     - "fastapi[standard]"
     - uvicorn
     - python-dotenv
+    - PyPDF2
